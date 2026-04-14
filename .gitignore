@@ -1,0 +1,25 @@
+# Ignore large data files
+*.zip
+data/raw/gtsrb/*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Checkpoints
+checkpoints/*.pth
+
+# Logs
+logs/
+
+# Notebooks
+notebooks/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
