@@ -1,0 +1,22 @@
+model:
+  num_classes: 43
+  name: GTSRB_CNN
+
+data:
+  data_dir: data/raw
+  batch_size: 64
+  num_workers: 2
+  val_split: 0.2
+
+training:
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  loss: cross_entropy
+  device: cpu             # Remplacez par cuda si vous avez un GPU
+
+checkpoints:
+  dir: checkpoints
+
+logs:
+  dir: logs
